@@ -164,7 +164,7 @@ export default function AuthPage({ onAuth }) {
               <div className="space-y-1.5 flex flex-col text-left">
                 <label className="text-[11px] uppercase tracking-widest text-accent-neutral font-bold pl-1">Email</label>
                 <input name="email" type="email" required
-                  className="w-full bg-dark-bg/50 border border-accent-border rounded-xl px-4 py-3.5 text-accent-light placeholder-accent-neutral/40 glow-focus transition-all text-sm outline-none" 
+                  className="w-full bg-dark-bg/50 border border-accent-border rounded-xl px-4 py-3.5 text-accent-light placeholder-accent-neutral/40 glow-focus transition-all text-sm outline-none"
                   placeholder="University Email or Reg. Number" />
               </div>
               <button type="submit"
