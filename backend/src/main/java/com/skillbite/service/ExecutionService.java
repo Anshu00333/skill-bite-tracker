@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 @Service
 public class ExecutionService {
 
-    private static final String DOCKER_JAVA_IMAGE = "openjdk:17-slim";
+    private static final String DOCKER_JAVA_IMAGE = "eclipse-temurin:25-jdk";
     private static final String DOCKER_PYTHON_IMAGE = "python:3.11-slim";
     private static final String DOCKER_CPP_IMAGE = "gcc:12";
 

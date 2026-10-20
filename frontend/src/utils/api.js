@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:8050/api'
+const BASE = import.meta.env.VITE_API_URL || 'http://localhost:8050/api'
 const LOCAL_USERS_KEY = 'skillbite_users'
 const LOCAL_ANSWERS_KEY = 'skillbite_answers'
 
@@ -137,7 +137,15 @@ export const api = {
 }
 
 function isNetworkError(err) {
-  return err instanceof TypeError && err.message === 'Failed to fetch'
+  if (!err) return false
+  const msg = (err.message || '').toLowerCase()
+  return (
+    err instanceof TypeError ||
+    msg.includes('failed to fetch') ||
+    msg.includes('networkerror') ||
+    msg.includes('network error') ||
+    msg.includes('load failed')
+  )
 }
 
 function getCurrentUser() {

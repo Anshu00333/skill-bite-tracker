@@ -6,7 +6,7 @@ version: '3.8'
 
 services:
   pull-java:
-    image: openjdk:17-slim
+    image: eclipse-temurin:25-jdk
     command: echo "Java image ready"
 
   pull-python:

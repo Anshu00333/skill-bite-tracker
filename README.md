@@ -55,7 +55,7 @@ frontend/src/
 ## Backend (Spring Boot)
 
 ### Requirements
-- Java 17+
+- Java 25+
 - Maven 3.8+
 
 ### Setup & Run
